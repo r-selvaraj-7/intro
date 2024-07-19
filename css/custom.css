@@ -779,6 +779,9 @@ pre {
   opacity: 0; /* Initially hidden */
 }
 
+.overlay.show{
+ display: block;
+}
 
 /* Close button styling */
 .popup .close-btn {
