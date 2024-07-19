@@ -744,6 +744,11 @@ pre {
 /* Ensure the container takes full height */
 
 
+/* Page content that will be blurred */
+#page-content {
+  transition: filter 0.3s ease; /* Smooth transition for the blur effect */
+}
+
 /* Popup styling */
 .popup {
   display: none; /* Hidden by default */
@@ -753,12 +758,12 @@ pre {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background to dim the rest of the page */
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
   overflow: auto;
 }
 
 .popup-content {
-  background-color: #fff; /* White background for the letter window */
+  background-color: #fff; /* White background for the popup */
   margin: 10% auto; /* Center the popup */
   padding: 20px;
   border: 1px solid #888;
@@ -783,19 +788,12 @@ pre {
   text-decoration: none;
 }
 
-/* Button styling 
-.button {
-  padding: 10px 20px;
-  border: none;
-  color: white;
-  background-color: #007BFF;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  margin: 10px;
-  border-radius: 5px; /* Rounded corners for the button */
-}*/
-
-.button:hover {
-  background-color: #0056b3;
+/* Apply blur effect when popup is shown */
+.popup.show {
+  display: block;
 }
+
+.popup.show ~ #page-content {
+  filter: blur(5px); /* Adjust blur amount as needed */
+}
+
