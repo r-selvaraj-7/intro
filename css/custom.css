@@ -588,6 +588,9 @@ span.yellow {
   font-weight: 300;
   font-family: "Work Sans", sans-serif !important;
   font-size: 2.3rem;
+  text-align: center; /* Center text horizontally */
+  display: inline-block; /* Needed for vertical centering */
+  margin: 0; /* Reset default margins */
   /*margin-bottom: .0rem;*/
 }
 
@@ -605,9 +608,6 @@ span.yellow {
   font-weight: 300;
   font-family: "Work Sans", sans-serif !important;
   font-size: 2.3rem;
-  text-align: center; /* Center text horizontally */
-  display: inline-block; /* Needed for vertical centering */
-  margin: 0; /* Reset default margins */
   /*margin-bottom: .0rem;*/
   -webkit-animation: glitch 2s infinite linear alternate-reverse;
 }
