@@ -746,7 +746,6 @@ pre {
 
 /* Page content that will be blurred */
 /* Full-page overlay for blur effect */
-/* Full-page overlay for blur effect */
 .overlay {
   display: none; /* Hidden by default */
   position: fixed;
@@ -764,8 +763,8 @@ pre {
   display: none; /* Hidden by default */
   position: fixed;
   z-index: 1000; /* Ensure the popup is on top */
-  left: 50%;
-  top: 50%;
+  left: 100%;
+  top: 100%;
   transform: translate(-50%, -50%); /* Center the popup */
   background-color: #fff; /* White background for the popup */
   padding: 20px;
