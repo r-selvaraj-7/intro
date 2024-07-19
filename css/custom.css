@@ -764,11 +764,11 @@ pre {
   display: none; /* Hidden by default */
   position: fixed;
   z-index: 1000; /* Ensure the popup is on top */
-  left: 0;
-  top: 0;
+  left: 50%;
+  top: 50%;
   transform: translate(-50%, -50%); /* Center the popup */
   background-color: #fff; /* White background for the popup */
-  padding: 20px;
+  padding: 100px;
   border: 1px solid #888;
   width: 60%; /* Adjust width as needed */
   max-width: 600px; /* Maximum width of the popup */
