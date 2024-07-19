@@ -748,7 +748,7 @@ pre {
 /* Full-page overlay for blur effect */
 .overlay {
   display: none; /* Hidden by default */
-  position: fixed;
+  position: absolute;
   z-index: 1000;  /* Just below the popup */
   top: 0;
   left: 0;
@@ -756,7 +756,7 @@ pre {
   height: 100%;
   background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
   backdrop-filter: blur(10px); /* Blur effect for backgroun*/
-  -webkit-backdrop-filter: blur(100px); /* Safari support for blur effect */
+  -webkit-backdrop-filter: blur(10px); /* Safari support for blur effect */
 }
 
 /* Popup styling */
