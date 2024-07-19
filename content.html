@@ -1,8 +1,8 @@
 <div class="container">
   
-<div class="popup" id="popup-download">
+<div class="popup" id="popup-info">
   <div class="popup-content">
-    <span class="close-btn" id="close-download-btn">&times;</span>
+    <span class="close-btn" id="close-info-btn">&times;</span>
     <h2>Über mich</h2>
     <p>
            Ich habe einen Master-Abschluss in Computer Simulation in Science mit einer Spezialisierung in CFD (meine Masterarbeit behandelte Multiphase-Strömungen mit OpenFOAM) sowie einen Bachelor-Abschluss in Luftfahrttechnik. Mit fünf Jahren Erfahrung als Design- und Simulationsingenieur verfüge ich über umfassende Kenntnisse in CFD und CAD-Software. Zudem beherrsche ich Programmiersprachen wie C, C++, Python und Matlab und arbeite sehr selbstständig.
@@ -10,7 +10,7 @@
      </p>
   </div>
 </div>
- 
+  <div id="page-content">
   <div class="photo-container">
     <img src="Bewerbung_Foto.jpeg" alt="Ravishankar Selvaraj" class="circular-photo">
   </div>
@@ -36,32 +36,33 @@
   <div class="row">
     <a class="button myButton" href="Lebenslauf_Ravishankar_Selvaraj.pdf" download="Ravishankar_Selvaraj_Resume.pdf">Lebenslauf herunterladen</a>
   </div>
-
-
+</div>
 
  
 </div>
 
 <script>
-  // Function to show the popup
+  // Function to show the popup and apply blur
   function showPopup() {
-    document.getElementById('popup-download').style.display = 'block';
+    document.getElementById('popup-info').classList.add('show');
+    document.getElementById('page-content').classList.add('blurred');
   }
 
-  // Function to close the popup
+  // Function to close the popup and remove blur
   function closePopup() {
-    document.getElementById('popup-download').style.display = 'none';
+    document.getElementById('popup-info').classList.remove('show');
+    document.getElementById('page-content').classList.remove('blurred');
   }
 
   // Show the popup automatically after 5 seconds
   setTimeout(showPopup, 5000); // 5000 milliseconds = 5 seconds
 
   // Add event listener to close the popup
-  document.getElementById('close-download-btn').addEventListener('click', closePopup);
+  document.getElementById('close-info-btn').addEventListener('click', closePopup);
 
   // Optionally, close the popup when clicking outside of it
   window.addEventListener('click', function(event) {
-    if (event.target === document.getElementById('popup-download')) {
+    if (event.target === document.getElementById('popup-info')) {
       closePopup();
     }
   });
