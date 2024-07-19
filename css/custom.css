@@ -752,8 +752,10 @@ pre {
   z-index: 1000; /* Just below the popup */
   left: 100%;
   top: 100%;
-  width: 10%;
-  height: 10%;
+  right: 100%;
+  bottom: 100%;
+  width: 100%;
+  height: 100%;
   background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
   backdrop-filter: blur(10px); /* Blur effect for backgroun*/
   -webkit-backdrop-filter: blur(10px); /* Safari support for blur effect */
