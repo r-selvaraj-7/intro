@@ -1,6 +1,6 @@
 var textarea = $(".term");
 var speed = 50; //Writing speed in milliseconds
-var text = "sudo rm -rf /*";
+var text = "Welcome to my Webpage";
 
 var i = 0;
 
