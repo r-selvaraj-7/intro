@@ -756,7 +756,7 @@ pre {
   height: 100%;
   background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
   backdrop-filter: blur(10px);*/ /* Blur effect for backgroun*/
-  -webkit-backdrop-filter: blur(10px); *//* Safari support for blur effect 
+  -webkit-backdrop-filter: blur(10px); /* Safari support for blur effect 
 }
 
 /* Popup styling */
@@ -791,10 +791,17 @@ pre {
 
 /* Close button styling */
 .popup .close-btn {
-  color: #aaa;
+  /*color: #aaa;
   float: right;
   font-size: 28px;
   font-weight: bold;
+  cursor: pointer;*/
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 20px;
   cursor: pointer;
 }
 
