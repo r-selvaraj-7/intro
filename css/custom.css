@@ -768,7 +768,7 @@ pre {
   top: 50%;
   transform: translate(-50%, -50%); /* Center the popup */
   background-color: #fff; /* White background for the popup */
-  padding: 100px;
+  padding: 20px;
   border: 1px solid #888;
   width: 60%; /* Adjust width as needed */
   max-width: 600px; /* Maximum width of the popup */
