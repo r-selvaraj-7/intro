@@ -748,7 +748,7 @@ pre {
 /* Full-page overlay for blur effect */
 .overlay {
   display: none; /* Hidden by default */
-  position: absolute;
+  position: relative;
   z-index: 1000;  /* Just below the popup */
   top: 0;
   left: 0;
