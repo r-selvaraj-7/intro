@@ -605,6 +605,9 @@ span.yellow {
   font-weight: 300;
   font-family: "Work Sans", sans-serif !important;
   font-size: 2.3rem;
+  text-align: center; /* Center text horizontally */
+  display: inline-block; /* Needed for vertical centering */
+  margin: 0; /* Reset default margins */
   /*margin-bottom: .0rem;*/
   -webkit-animation: glitch 2s infinite linear alternate-reverse;
 }
@@ -625,6 +628,14 @@ span.yellow {
   font-size: 2.4rem;
   /*margin-bottom: .0rem;*/
   -webkit-animation: glitch2 3s infinite linear alternate-reverse;
+}
+
+/* Additional CSS to center the .glitch_text container */
+.glitch_container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Full viewport height */
 }
 
 pre {
