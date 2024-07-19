@@ -42,16 +42,16 @@
 </div>
 
 <script>
-  // Function to show the popup and apply blur
+  // Function to show the overlay and popup
   function showPopup() {
+    document.getElementById('overlay').classList.add('show');
     document.getElementById('popup-info').classList.add('show');
-    document.getElementById('page-content').classList.add('blurred');
   }
 
   // Function to close the popup and remove blur
   function closePopup() {
+    document.getElementById('overlay').classList.remove('show');
     document.getElementById('popup-info').classList.remove('show');
-    document.getElementById('page-content').classList.remove('blurred');
   }
 
   // Show the popup automatically after 5 seconds
@@ -62,10 +62,8 @@
 
   // Optionally, close the popup when clicking outside of it
   window.addEventListener('click', function(event) {
-    if (event.target === document.getElementById('popup-info')) {
+    if (event.target === document.getElementById('overlay')) {
       closePopup();
     }
   });
 </script>
-
-  
