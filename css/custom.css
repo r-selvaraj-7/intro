@@ -722,10 +722,16 @@ pre {
     object-fit: cover; /* Ensures the photo covers the area without distortion */
     border: 2px solid #ccc; /* Optional: adds a border around the photo */
     box-shadow: 0 0 10px 3px rgba(135, 206, 235, 0.7); /* Sky blue glowing effect */
-    transition: box-shadow 0.3s ease, transform 0.5s ease; /* Smooth transition for glow and scaling */
+    animation: glowZoom 3s infinite alternate; /* Apply animation */
 }
 
-.circular-photo:hover {
-    box-shadow: 0 0 15px 5px rgba(135, 206, 235, 0.9); /* Intensified sky blue glow on hover */
-    transform: scale(1.05); /* Slightly enlarges the image on hover for a more dynamic effect */
+@keyframes glowZoom {
+    0% {
+        box-shadow: 0 0 10px 3px rgba(135, 206, 235, 0.7); /* Initial subtle glow */
+        transform: scale(1); /* Original size */
+    }
+    100% {
+        box-shadow: 0 0 15px 5px rgba(135, 206, 235, 0.9); /* Intense glow */
+        transform: scale(1.1); /* Slightly enlarged */
+    }
 }
