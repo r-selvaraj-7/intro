@@ -774,6 +774,9 @@ pre {
   max-width: 1000px; /* Maximum width of the popup */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Shadow for better visibility */
   border-radius: 10px; /* Rounded corners */
+  overflow: auto; /* Handle overflow of content */
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Animation for appearance */
+  opacity: 0; /* Initially hidden */
 }
 
 
@@ -797,6 +800,8 @@ pre {
   text-align: justify;
 }
 
+
+
 /* Show overlay and popup */
 .overlay.show {
   display: block;
@@ -804,7 +809,14 @@ pre {
 
 .popup.show {
   display: block;
+  opacity: 1; /* Fully visible */
 }
 
-
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .popup {
+    width: 90%;
+    height: 90%;
+  }
+}
 
