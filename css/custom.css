@@ -728,4 +728,5 @@ pre {
 .circular-photo:hover {
     box-shadow: 0 0 15px 5px rgba(135, 206, 235, 0.9); /* Intensified sky blue glow on hover */
     transform: scale(1.05); /* Slightly enlarges the image on hover for a more dynamic effect */
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
