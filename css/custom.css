@@ -721,8 +721,8 @@ pre {
     border-radius: 50%; /* Makes the photo circular */
     object-fit: cover; /* Ensures the photo covers the area without distortion */
     border: 2px solid #ccc; /* Optional: adds a border around the photo */
-     box-shadow: 0 0 5px rgba(135, 206, 235, 0.5); /* Initial glow effect */
-    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition for glow and scaling */
+    box-shadow: 0 0 10px 3px rgba(135, 206, 235, 0.7); /* Sky blue glowing effect */
+    transition: box-shadow 0.3s ease, transform 0.5s ease; /* Smooth transition for glow and scaling */
 }
 
 .circular-photo:hover {
