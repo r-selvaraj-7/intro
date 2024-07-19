@@ -1,19 +1,21 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const popup = document.getElementById('popup');
-  const closeButton = document.getElementById('close-btn');
+// Get the pop-up and button elements
+const popup = document.getElementById('popup');
+const openPopupButton = document.getElementById('openPopup');
+const closeBtn = document.querySelector('.close-btn');
 
-  // Show the popup immediately upon page load
-  popup.style.display = 'flex';
+// Open the pop-up
+openPopupButton.addEventListener('click', () => {
+    popup.style.display = 'block';
+});
 
-  // Close the popup when the close button is clicked
-  closeButton.addEventListener('click', () => {
+// Close the pop-up when the close button is clicked
+closeBtn.addEventListener('click', () => {
     popup.style.display = 'none';
-  });
+});
 
-  // Optional: Hide the popup if the user clicks outside of it
-  window.addEventListener('click', (event) => {
+// Close the pop-up if the user clicks anywhere outside of the pop-up
+window.addEventListener('click', (event) => {
     if (event.target === popup) {
-      popup.style.display = 'none';
+        popup.style.display = 'none';
     }
-  });
 });
