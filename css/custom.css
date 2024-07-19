@@ -690,7 +690,7 @@ pre {
     font-size: 1.5rem;
   }
 }
-
+/*
 .container {
   text-align: center;
 }
@@ -704,4 +704,27 @@ pre {
   height: 150px;
   border-radius: 50%;
   object-fit: cover;
+}
+*/
+
+/* photo*/
+.photo-container {
+    display: flex;
+    justify-content: center; /* Centers the photo horizontally */
+    align-items: center; /* Centers the photo vertically */
+    padding: 10px; /* Optional: adds some space around the photo */
+}
+
+.circular-photo {
+    width: 200px; /* Adjust as needed */
+    height: 200px; /* Adjust as needed */
+    border-radius: 50%; /* Makes the photo circular */
+    object-fit: cover; /* Ensures the photo covers the area without distortion */
+    border: 2px solid #ccc; /* Optional: adds a border around the photo */
+    box-shadow: 0 0 10px 3px rgba(0, 153, 255, 0.7); /* Blue glowing effect */
+    transition: box-shadow 0.3s ease; /* Smooth transition effect */
+}
+
+.circular-photo:hover {
+    box-shadow: 0 0 15px 5px rgba(135, 206, 235, 0.9); /* Intensified glow on hover */
 }
