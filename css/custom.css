@@ -771,7 +771,7 @@ pre {
   padding: 20px;
   border: 1px solid #888;
   width: 60%; /* Adjust width as needed */
-  max-width: 0; /* Maximum width of the popup */
+  max-width: 800px; /* Maximum width of the popup */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Shadow for better visibility */
   border-radius: 10px; /* Rounded corners */
 }
