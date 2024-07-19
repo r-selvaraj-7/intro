@@ -759,7 +759,7 @@ pre {
   -webkit-backdrop-filter: blur(10px); /* Safari support for blur effect */
 }
 
-/* Popup styling 
+/* Popup styling */
 .popup {
   display: none; /* Hidden by default */
   position: fixed;
@@ -772,16 +772,21 @@ pre {
   justify-content: center;
   align-items: center;
 }
-*/
+
 /* Popup content styling */
 .popup-content {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 1000; /* Ensure the popup is on top */
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); /* Center the popup */
   background-color: #fff; /* White background for the popup */
   padding: 20px;
   border: 1px solid #888;
-  width: 80%; /* Adjust width as needed */
-  max-width: 800px; /* Maximum width of the popup */
+  width: 60%; /* Adjust width as needed */
+  max-width: 600px; /* Maximum width of the popup */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Shadow for better visibility */
-  border-radius: 10px; /* Rounded corners */
   overflow: auto; /* Handle overflow of content */
 }
 
