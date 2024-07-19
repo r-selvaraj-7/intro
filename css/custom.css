@@ -780,7 +780,7 @@ pre {
 }
 
 .overlay.show{
- display: block;
+ display: none;
 }
 
 /* Close button styling */
@@ -803,7 +803,7 @@ pre {
 }
 
 
-.overlay.show, .popup.show {
+.popup.show {
   display: block;
   opacity: 1; /* Fully visible */
 }
