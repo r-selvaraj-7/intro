@@ -739,3 +739,48 @@ pre {
         transform: scale(1); /* Original size */
     }
 }
+
+
+/*sentence*/
+/* Ensure the container takes full height */
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  position: relative;
+}
+
+/* Style and position the About Me section */
+.about-me {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 8px; /* Rounded corners */
+  padding: 20px;
+  width: 300px; /* Adjust as needed */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for better visibility */
+}
+
+.about-me h2 {
+  margin-top: 0;
+}
+
+.about-me p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.about-me a {
+  color: #007bff; /* Link color */
+  text-decoration: none;
+}
+
+.about-me a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
