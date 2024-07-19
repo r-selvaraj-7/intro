@@ -2,10 +2,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const popup = document.getElementById('popup');
   const closeButton = document.getElementById('close-btn');
 
-  // Show the popup after 30 seconds
-  setTimeout(() => {
-    popup.style.display = 'flex';
-  }, 5000); // 30 seconds in milliseconds
+  // Show the popup immediately upon page load
+  popup.style.display = 'flex';
 
   // Close the popup when the close button is clicked
   closeButton.addEventListener('click', () => {
