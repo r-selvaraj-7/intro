@@ -755,7 +755,8 @@ pre {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
-  filter: blur(5px); /* Blur effect */
+  backdrop-filter: blur(10px); /* Blur effect for background */
+  -webkit-backdrop-filter: blur(10px); /* Safari support for blur effect */
 }
 
 /* Popup styling */
@@ -763,8 +764,8 @@ pre {
   display: none; /* Hidden by default */
   position: fixed;
   z-index: 1000; /* Ensure the popup is on top */
-  left: 100%;
-  top: 100%;
+  left: 50%;
+  top: 50%;
   transform: translate(-50%, -50%); /* Center the popup */
   background-color: #fff; /* White background for the popup */
   padding: 20px;
@@ -788,6 +789,10 @@ pre {
 .close-btn:focus {
   color: black;
   text-decoration: none;
+}
+/* Justified text styling */
+.justified-text {
+  text-align: justify;
 }
 
 /* Show overlay and popup */
