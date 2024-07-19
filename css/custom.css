@@ -749,8 +749,10 @@ pre {
 .overlay {
   display: none; /* Hidden by default */
   position: fixed;
-  /*z-index: 1000; */ /* Just below the popup */
+  z-index: 1000;  /* Just below the popup */
   /*bottom: 100%;*/
+  max-width: 800px;
+  margin: 0 auto;
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
