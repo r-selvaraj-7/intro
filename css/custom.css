@@ -766,29 +766,16 @@ pre {
   z-index: 1000; /* Ensure the popup is on top */
   left: 0;
   top: 0;
-  width: 100%; /* Full-width */
-  height: 100%; /* Full-height */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* Popup content styling */
-.popup-content {
-  display: none; /* Hidden by default */
-  position: fixed;
-  z-index: 1000; /* Ensure the popup is on top */
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%); /* Center the popup */
+  transform: translate(-100%, -100%); /* Center the popup */
   background-color: #fff; /* White background for the popup */
   padding: 20px;
   border: 1px solid #888;
   width: 60%; /* Adjust width as needed */
-  max-width: 600px; /* Maximum width of the popup */
+  max-width: 1200px; /* Maximum width of the popup */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Shadow for better visibility */
-  overflow: auto; /* Handle overflow of content */
+  border-radius: 10px; /* Rounded corners */
 }
+
 
 
 /* Close button styling */
