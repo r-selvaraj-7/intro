@@ -781,7 +781,14 @@ pre {
 
 .overlay.show{
   display: block;
+  opacity: 1; /* Fully visible */
 }
+
+.popup.show {
+  display: block;
+  opacity: 1; /* Fully visible */
+}
+
 
 /* Close button styling */
 .popup .close-btn {
@@ -800,11 +807,6 @@ pre {
 /* Justified text styling */
 .justified-text {
   text-align: justify;
-}
-
-
-.popup.show {
-  display: block;
 }
 
 /* Responsive adjustments */
