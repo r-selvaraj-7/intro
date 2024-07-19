@@ -771,12 +771,9 @@ pre {
   padding: 20px;
   border: 1px solid #888;
   width: 60%; /* Adjust width as needed */
-  max-width: 100vw; /* Maximum width of the popup */
+  max-width: 0; /* Maximum width of the popup */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Shadow for better visibility */
   border-radius: 10px; /* Rounded corners */
-  overflow: auto; /* Handle overflow of content */
-  transition: opacity 0.3s ease, transform 0.3s ease; /* Animation for appearance */
-  opacity: 0; /* Initially hidden */
 }
 
 
