@@ -805,7 +805,6 @@ pre {
 
 .popup.show {
   display: block;
-  opacity: 1; /* Fully visible */
 }
 
 /* Responsive adjustments */
