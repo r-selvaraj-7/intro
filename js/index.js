@@ -1,6 +1,6 @@
 var textarea = $(".term");
 var speed = 50; //Writing speed in milliseconds
-var text = "Welcome to my Webpage";
+var text = "Willkommen auf meiner Website";
 
 var i = 0;
 
