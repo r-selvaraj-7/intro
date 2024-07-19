@@ -45,21 +45,26 @@
 </div>
 
 <script>
-  // Show the popup
-  document.getElementById('download-btn').addEventListener('click', function(event) {
-    event.preventDefault(); // Prevent the default action of the link
+  // Function to show the popup
+  function showPopup() {
     document.getElementById('popup-download').style.display = 'block';
-  });
+  }
 
-  // Close the popup
-  document.getElementById('close-download-btn').addEventListener('click', function() {
+  // Function to close the popup
+  function closePopup() {
     document.getElementById('popup-download').style.display = 'none';
-  });
+  }
+
+  // Show the popup automatically after 5 seconds
+  setTimeout(showPopup, 5000); // 5000 milliseconds = 5 seconds
+
+  // Add event listener to close the popup
+  document.getElementById('close-download-btn').addEventListener('click', closePopup);
 
   // Optionally, close the popup when clicking outside of it
   window.addEventListener('click', function(event) {
     if (event.target === document.getElementById('popup-download')) {
-      document.getElementById('popup-download').style.display = 'none';
+      closePopup();
     }
   });
 </script>
