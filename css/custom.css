@@ -745,8 +745,17 @@ pre {
 
 
 /* Page content that will be blurred */
-#page-content {
-  transition: filter 0.3s ease; /* Smooth transition for the blur effect */
+/* Full-page overlay for blur effect */
+.overlay {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 999; /* Just below the popup */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+  filter: blur(5px); /* Blur effect */
 }
 
 /* Popup styling */
@@ -788,12 +797,13 @@ pre {
   text-decoration: none;
 }
 
-/* Apply blur effect when popup is shown */
+/* Show overlay and popup */
+.overlay.show {
+  display: block;
+}
+
 .popup.show {
   display: block;
 }
 
-.popup.show ~ #page-content {
-  filter: blur(5px); /* Adjust blur amount as needed */
-}
 
