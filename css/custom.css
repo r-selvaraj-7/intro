@@ -679,3 +679,18 @@ pre {
     font-size: 1.5rem;
   }
 }
+
+.container {
+  text-align: center;
+}
+
+.photo-container {
+  margin: 20px 0;
+}
+
+.circular-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
